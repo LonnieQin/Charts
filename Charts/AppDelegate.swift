@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let string = "12345"
+        let substring = string[string.index(string.startIndex, offsetBy: .init(1))...string.index(string.startIndex, offsetBy: .init(3))]
+        print(substring)
+        
         return true
     }
 
